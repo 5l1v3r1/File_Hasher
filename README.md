@@ -3,7 +3,7 @@ Python script to automated evidence hashing for archival purposes.
 
 Handles recursing directories and saves output to .csv file.
 
-Usage: file_hasher.py <directory>
+Usage: file_hasher.py \<directory\>
   
 Example output:
 
