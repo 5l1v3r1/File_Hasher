@@ -1,2 +1,14 @@
 # File_Hasher
-Python script to automated evidence hashing for archival purposes
+Python script to automated evidence hashing for archival purposes.
+
+Handles recursing directories and saves output to .csv file.
+
+Usage: file_hasher.py <directory>
+  
+Example output:
+
+File Name	Path	SHA256	SHA1	MD5
+dummy_file.txt	/hash_files/hash_test	5af5a7610ca14bfb82ced731d635089bbeb744dc67a14675ff5eeb1174752453	79308e56308ff2a6349a75e100113794a1a520ee	f359ea117e2f7f8828adb6d83501eb93
+dummy_file.txt	/hash_files/hash_test/evidence1	5af5a7610ca14bfb82ced731d635089bbeb744dc67a14675ff5eeb1174752453	79308e56308ff2a6349a75e100113794a1a520ee	f359ea117e2f7f8828adb6d83501eb93
+dummy_file.txt	/hash_files/hash_test/evidence1/more evidence	5af5a7610ca14bfb82ced731d635089bbeb744dc67a14675ff5eeb1174752453	79308e56308ff2a6349a75e100113794a1a520ee	f359ea117e2f7f8828adb6d83501eb93
+dummy_file.txt	/hash_test/evidence1/more evidence/even more evidence	5af5a7610ca14bfb82ced731d635089bbeb744dc67a14675ff5eeb1174752453	79308e56308ff2a6349a75e100113794a1a520ee	f359ea117e2f7f8828adb6d83501eb93
