@@ -1,4 +1,4 @@
-# File_Hasher
+# File_Hasher.py
 Python script to automated evidence hashing for archival purposes.
 
 Handles recursing directories and saves output to .csv file.
